@@ -1,0 +1,67 @@
+import pickle
+import io
+import time
+print ("Please create an account to continue.")
+berg = input("Username:")
+glerg = input("Password:")
+class example_class:
+    a_dict = berg
+
+my_object = example_class()
+
+my_pickled_object = pickle.dumps(my_object)  # Pickling the object
+print(f"This is my pickled object:\n{my_pickled_object}\n")
+
+my_object.a_dict = None
+
+my_unpickled_object = pickle.loads(my_pickled_object)  # Unpickling the object
+print(
+    f"This is a_dict of the unpickled object:\n{my_unpickled_object.a_dict}\n")
+
+
+
+class bumpy_class:
+  a_bict = glerg
+
+my_bobject = bumpy_class()
+
+my_bickled_object = pickle.dumps(my_bobject)  # Pickling the object
+print(f"This is my pickled object:\n{my_bickled_object}\n")
+
+my_bobject.a_bict
+
+my_unbickled_object = pickle.loads(my_bickled_object)  # Unpickling the object
+print(
+  f"This is a_dict of the unpickled object:\n{my_unbickled_object.a_bict}\n")
+
+def newline():
+  print ("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n")
+
+print (newline())
+print("Please login with your newly created account.")
+moop = 1
+map = True
+while (moop < 4):
+  moop = moop + 1
+  pleg = input("\nUsername:")
+  if(pleg != berg):
+    print("Incorrect username. Try again!")
+  if(moop > 3):
+    print("Too many failed attempts. Account locked.")
+    while (map == True):
+      time.sleep(1)
+  if (pleg == berg):
+    print("\nCorrect username.")
+    break
+DDOS = 1
+while (DDOS < 4):
+  kleg = input("\nPassword:")
+  DDOS = DDOS + 1
+  if (kleg != glerg):
+    print("Incorrect password. Please try again.")
+    if(DDOS > 3):
+      print("Too many failed attempts. Account locked.")
+  if (kleg == glerg): 
+    print("\nCorrect password.")
+    print("Welcome back, " + berg + ".")
+    break
